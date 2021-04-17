@@ -1,12 +1,11 @@
 class SillyController < ApplicationController
-    protect_from_forgery with: :null_session
+    
     def fun
         #render plain: 'plain text'
         render json: params
     end
 
     def time
-        #render plain: 'plain text'
         render json: params
     end
 
